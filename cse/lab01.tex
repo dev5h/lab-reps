@@ -1,0 +1,152 @@
+\documentclass{report}
+\usepackage{float}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{geometry}
+\usepackage{amsbsy}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{verbatim}
+
+
+\geometry{
+    a4paper,
+    left=20mm,
+    top=20mm,
+    right=20mm,
+    bottom=20mm
+}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{gray!15}, % Set the background color to greyish (adjust the percentage as needed)
+    basicstyle=\ttfamily\small, % Set the font style to a monospaced font
+    keywordstyle=\color{black}, % Set keyword color to black
+    commentstyle=\color{gray}, % Set comment color to black
+    stringstyle=\color{black}, % Set string color to black
+    numbers=left, % Display line numbers on the left side
+    numberstyle=\tiny\color{black}, % Set style for line numbers
+    stepnumber=1, % Set the step of line numbering (1 = every line, 2 = every second line, etc.)
+    numbersep=8pt, % Adjust the distance of line numbers from the code
+    showstringspaces=false, % Don't show spaces in strings
+    tabsize=4, % Set the size of tab spaces
+    frame=none, % Remove the frame around the code snippet
+    escapeinside={(*}{*)}, % Reduce the space around the code snippet
+}
+
+
+\newcounter{exp_no}
+
+\begin{document}
+
+
+\setcounter{chapter}{1}
+\refstepcounter{exp_no}
+\section*{Experiment No:  \thechapter (\alph{exp_no})}
+
+
+
+\section*{Theory}
+\input{texts/theory.txt}
+\section*{Code}
+\lstinputlisting[language=C++, style=mystyle]{code/exp01.cpp}
+\section*{Output}
+\begin{tcolorbox}[colback=black, coltext=white, fontupper=\ttfamily\small,sharp corners ]
+    \verbatiminput{code/op1.txt}
+\end{tcolorbox}
+\section*{Discussion}
+This program is very useful fundamental of creating grading system. It can be used to create large scale applications for grading a product or student based on their ratings. However, the main challenge is creating a better design of code to prevent any potential bug or errors. Also the program is very basic as it has a lot of rooms to update and make it more secured.\\
+The program's input is not sanitized as well and it can create a lot of errors. Overall the program is not ready for real world use cases.
+
+\section*{Conclusion}
+The goal of the program was to create a system to analyze the result of a student based on the input of scores in their test.  The output shows a brief analysis of the result with a grading system based on their marks. Hence it can be said that the program fulfills the main goal.
+
+
+\refstepcounter{exp_no}
+\section*{Experiment No:  \thechapter (\alph{exp_no})}
+
+\section*{Theory}
+\input{texts/theory.txt}
+
+\section*{Code}
+\lstinputlisting[language=C++, style=mystyle]{code/exp02.cpp}
+
+\section*{Output}
+\begin{tcolorbox}[colback=black, coltext=white, fontupper=\ttfamily\small,sharp corners ]
+    \verbatiminput{code/op02.txt}
+\end{tcolorbox}
+
+\section*{Discussion}
+The C++ program for counting character frequency presents a useful utility for text analysis and data mining. However, some challenges, like case sensitivity and Unicode support, need to be addressed. To enhance its potential, implementing new features such as case-insensitive counting, Unicode compatibility, and character distribution visualization can improve usability. The program finds applications in data analysis, text mining, and password strength evaluation. With further development, it can become a versatile tool for cross-language compatibility and assist in optimizing text and improving readability in various real-world scenarios.
+
+\section*{Conclusion}
+The goal of the program was to create a program to count the frequency of each character in a given string. The input will be a string and output will print the frequencies of their corresponding characters. From an  overall perspective it can be said that the program fulfills the goal.
+
+
+
+
+\refstepcounter{exp_no}
+\section*{Experiment No:  \thechapter (\alph{exp_no})}
+
+\section*{Theory}
+\input{texts/theory.txt}
+
+\section*{Code}
+\lstinputlisting[language=C++, style=mystyle]{code/exp03.cpp}
+
+\section*{Output}
+\begin{tcolorbox}[colback=black, coltext=white, fontupper=\ttfamily\small,sharp corners ]
+    \verbatiminput{code/op03.txt}
+\end{tcolorbox}
+
+\section*{Discussion}
+Printing different shapes in any programming language can be fun and challenging. It can help beginners properly understand core concepts of loops and nesting. Also printing pattern can also be useful to properly understand the logics of a program for pattern recognition.
+
+\section*{Conclusion}
+The goal of the program was to create a program to print a pattern of given length. The input will be an integer indicating the size(row) of the shape and output will print the shape with the given length. From an  overall perspective it can be said that the program fulfills the goal.
+
+\refstepcounter{exp_no}
+\section*{Experiment No:  \thechapter (\alph{exp_no})}
+
+\section*{Theory}
+\input{texts/theory.txt}
+
+\section*{Code}
+\lstinputlisting[language=C++, style=mystyle]{code/exp04.cpp}
+
+\section*{Output}
+\begin{tcolorbox}[colback=black, coltext=white, fontupper=\ttfamily\small,sharp corners ]
+    \verbatiminput{code/op04.txt}
+\end{tcolorbox}
+
+\section*{Discussion}
+The C++ program for summing the nth term of a Fibonacci series has potential applications in mathematics and finance. Challenges may arise with large n values, causing integer overflow and performance issues. By implementing efficient algorithms like matrix exponentiation or memoization and adding user-friendly input validation, the program becomes robust and valuable for time complexity analysis, numerical computations, and exploring Fibonacci-like sequences in real-world scenarios.
+
+\section*{Conclusion}
+The goal of the program was to  compute the sum of first nth term of a Fibonacci series. The input will be an integer indicating the number of terms of the series and output will simply print the fibonacci series and it's summation. From an  overall perspective it can be said that the program fulfills it's goal.
+
+\refstepcounter{exp_no}
+\section*{Experiment No:  \thechapter (\alph{exp_no})}
+
+\section*{Theory}
+\input{texts/theory.txt}
+
+\section*{Code}
+\lstinputlisting[language=C++, style=mystyle]{code/exp05.cpp}
+
+\section*{Output}
+\begin{tcolorbox}[colback=black, coltext=white, fontupper=\ttfamily\small,sharp corners ]
+    \verbatiminput{code/op05.txt}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=black, coltext=white, fontupper=\ttfamily\small,sharp corners ]
+    \verbatiminput{code/op05-2.txt}
+\end{tcolorbox}
+
+\section*{Discussion}
+The C++ program for password validation with four criteria—minimum length of 8 characters, at least one capital letter, at least one small letter, and at least one special character—addresses important security concerns. However, potential issues may arise with complexity, as each criterion requires separate checks, leading to reduced performance for longer passwords. To improve efficiency, optimizing the validation algorithm and leveraging regular expressions for pattern matching can be implemented as new features. The program's potential lies in enhancing online security, protecting sensitive data, and providing a robust tool for validating passwords in various applications, including user authentication systems, secure online platforms, and data encryption scenarios.
+
+\section*{Conclusion}
+The goal of the program was to validate a password based on 4 criteria. The input will be a string indicating the password and output will be the result after validation which will including the errors i.e short, no capital or small or special characters. It will print Valid message as well if password meets the 4 criteria. From an overall perspective it can be said that the program fulfills it's goal.
+
+\end{document}
+

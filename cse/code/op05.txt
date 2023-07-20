@@ -1,0 +1,4 @@
+Enter your password: mynameissaif45
+Password must contains one Capital Letter
+Process returned 1 (0x1)   execution time : 10.052 s
+Press ENTER to continue.

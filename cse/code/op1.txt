@@ -1,0 +1,18 @@
+Enter total number of marks you want to calculate: 5 
+Enter mark # 1: 82
+Enter mark # 2: 75
+Enter mark # 3: 89
+Enter mark # 4: 66
+Enter mark # 5: 95
+Highest Mark: 95
+Lowest Mark: 66
+Average Mark: 81.4
+Mark evaluations by grading----------------------------
+82 --------------- A+
+75 --------------- A
+89 --------------- A+
+66 --------------- Not Evaluated
+95 --------------- A+
+
+Process returned 0 (0x0)   execution time : 14.003 s
+Press ENTER to continue.

@@ -1,0 +1,16 @@
+Type the length of the shape: 5      
+******
+******
+******
+******
+******
+
+
+*
+**
+***
+****
+*****
+
+Process returned 0 (0x0)   execution time : 11.255 s
+Press ENTER to continue.

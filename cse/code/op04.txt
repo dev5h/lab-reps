@@ -1,0 +1,5 @@
+How many terms: 8
+1	1	2	3	5	8	13	21	
+Sum of series is : 54
+Process returned 0 (0x0)   execution time : 1.460 s
+Press ENTER to continue.

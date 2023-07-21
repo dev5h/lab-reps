@@ -1,0 +1,13 @@
+\contentsline {chapter}{List of Figures}{2}{Doc-Start}%
+\contentsline {chapter}{List of Tables}{3}{Doc-Start}%
+\gdef \the@ipfilectr {@-1}
+\contentsline {chapter}{\numberline {1}Observation of Ratings of Various Electrical Machines}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Objectives}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Introduction}{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}General ELectric Direct Current Generator}{1}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}General Electric Synchronous Machine}{2}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}General Electric Induction Motor}{2}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Theory}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Table}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Conclusions and Discussions}{4}{section.1.5}%
+\gdef \the@ipfilectr {}

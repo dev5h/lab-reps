@@ -1,0 +1,148 @@
+\usepackage[utf8]{inputenc} % This defines the font-encoding you prefer to use
+\usepackage{fourier}
+\usepackage{float}
+\pagestyle{headings}
+\usepackage{marvosym}
+\usepackage[pdftex]{graphicx}
+\usepackage[top=1in, bottom=1in, left=1.2in, right=1 in]{geometry}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{rotating}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage{longtable}
+\usepackage{todonotes}
+\usepackage[compact]{titlesec}
+\newcommand{\bigrule}{\titlerule[0.5mm]}
+\titleformat{\chapter}[display]
+{\bfseries\Huge}
+{%
+  \vskip-3em
+  \titlerule
+  \filleft
+  \Large\chaptertitlename\
+  \Large\thechapter}
+{0mm}
+{\filleft}
+[\vspace{0.5mm} \bigrule]
+\setlength\columnseprule{0.5pt}
+\linespread{1.5}
+\newenvironment{remark}{\par\mbox{}\par\noindent{\bfseries \emph{Remark}\/}:\normalfont}{\par}
+\newenvironment{defin}{\par\mbox{}\par\noindent\bfseries \emph{\Pointinghand\ }\normalfont}{\par}
+\setcounter{tocdepth}{2}
+\usepackage[colorlinks=true, a4paper=true, pdfstartview=FitV,
+  linkcolor=black, citecolor=black, urlcolor=black]{hyperref}
+\pdfcompresslevel=9
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{epstopdf}
+\usepackage{multirow}
+\usepackage{supertabular}
+\usepackage{longtable}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{caption}
+\usepackage{array}
+\setlength{\LTcapwidth}{\textwidth}
+\newcommand{\C}{\mathbb{C}}
+\usepackage{lipsum}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\cfoot{\thepage}
+\usepackage{hyperref}
+\usepackage{enumitem,amssymb}
+
+%equation breaking into next page
+\allowdisplaybreaks
+
+
+%Replacing Chapter by Experiment in toc
+\usepackage{tocloft}
+\makeatletter
+\renewcommand{\cftdot}{}
+\renewcommand{\cftchappresnum}{Experiment }
+\renewcommand{\cftchapaftersnum}{:}
+\renewcommand{\cftchapnumwidth}{7.5em}
+\setcounter{tocdepth}{0}
+\makeatother
+
+
+%Replacing Chapter by Experiment in the report
+\usepackage{titlesec}
+\renewcommand{\chaptername}{Experiment}
+
+
+%Title page design of each Experiment
+\NewDocumentCommand{\myrule}{O{1pt} O{2pt} O{black}}{%
+  \par\nobreak % don't break a page here
+  \kern\the\prevdepth % don't take into account the depth of the preceding line
+  \kern#2 % space before the rule
+  {\color{#3}\hrule height #1 width\hsize} % the rule
+  \kern#2 % space after the rule
+  \nointerlineskip % no additional space after the rule
+}
+
+
+%chpter name and tile, section font size
+\usepackage{sectsty}
+\chapternumberfont{\fontsize{14}{5}\selectfont}
+\chaptertitlefont{\fontsize{14}{12}\selectfont}
+\sectionfont{\fontsize{12}{12}\selectfont}
+\subsectionfont{\fontsize{12}{12}\selectfont}
+\subsubsectionfont{\fontsize{12}{12}\selectfont}
+
+
+%for table settings 
+\usepackage{multirow}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+
+
+% for multiple columns rule setup
+\setlength{\columnseprule}{0pt}
+
+%for clearing floats
+\usepackage{placeins}
+
+%chapterwise bibliography
+%\usepackage[sectionbib]{natbib}
+\usepackage[sectionbib, square,sort,comma,numbers]{natbib}
+\usepackage{chapterbib}
+%bibliography heading/title change
+\renewcommand{\bibname}{References}
+
+%%% Uncomment if you want to include the bibliographies at the end of each chapter in the table of contents.  
+% \usepackage[nottoc]{tocbibind}
+
+%for the code part
+\usepackage{listings}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+  %backgroundcolor=\color{backcolour},   
+  commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\ttfamily\normalsize,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=t,
+  keepspaces=true,
+  numbers=left,
+  numbersep=10pt,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=2
+}
+\lstset{style=mystyle}
+
